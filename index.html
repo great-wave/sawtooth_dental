@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sawtooth Dental Care / Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <header class="flex flex-row items-center justify-between fixed top-0 left-0 right-0 bg-white p-2 sm:px-8 sm:py-2 z-50 transition-transform duration-300"> <!-- Header -->
+                
+                <nav class="w-6 sm:hidden"> <!-- Menu Icon -->
+                    <a id="menuIcon" aria-label="Menu">
+                        <img src="assets/icons/menu.svg" alt="Menu">
+                    </a>
+                </nav>
+
+                <nav class="hidden sm:w-32 sm:block "> <!-- Menu Link -->
+                    <a id="menuLink" class="border-2 self-center p-2 bg-white">MENU</a>
+                </nav>
+
+                
+                <h1 class="sm:hidden"> <!-- Wordmark -->
+                    <a href="index.html">
+                        <img class="h-8" src="assets/figma/Wordmark.svg" alt="Sawtooth Dental Care">
+                    </a>
+                </h1>
+
+                <h1 class="hidden sm:block"> <!-- Logo -->
+                    <a href="index.html">    
+                        <img class="h-24" src="assets/figma/sawtooth_logo_custom 1.svg" alt="Sawtooth Dental Care">
+                    </a>
+                </h1>
+
+
+                <div class="w-6 sm:hidden"> <!-- Cell Icon -->
+                    <a href="tel:+15099977533" aria-label="Call Sawtooth Dental Care">
+                        <img src="assets/icons/smartphone.svg" alt="Phone">
+                    </a>
+                </div>
+
+                <div class="hidden sm:w-32 sm:flex sm:flex-col sm:items-center"> <!-- Number and Send Message Button -->
+                    <a class="tracking-wide" href="tel:+15099977533" aria-label="Call Sawtooth Dental Care">509-997-7533</a>
+                    <a href="#" class="border-2 self-center p-0.5 bg-white">SEND MESSAGE</a>
+
+                </div>
+            
+            </header>
+
+        <div class="flex flex-col gap-2"> <!-- Long Container-->
+                
+            <section class="flex flex-col min-h-screen relative overflow-hidden"> <!--Home Hero-->
+
+                <div class="absolute inset-0 -z-10">
+                    
+                    <img class="w-full h-full object-cover object-[30%_50%]" src="assets/stills/vlcsnap-2025-04-10-20h44m35s524.png" alt="The snowy Methow Valley at Sunrise.">
+                
+                </div>
+                
+                <div class="flex flex-col pt-[56vh] sm:pt-[60vh] gap-6 sm:gap-8 max-w-[1280px] mx-auto px-8 lg:px-16">
+                    
+                    <h1 class="font-heading text-5xl sm:text-[50px] font-extralight bg-white">SAWTOOTH DENTAL CARE</h1>
+                    
+                    <h2 class="font-heading text-2xl font-normal text-white">A tradition of service in the Methow Valley for over 20 years.</h2>
+                    
+                    <a class="lg:hidden border-2 self-center p-2 bg-white" href="tel:+15099977533">MAKE AN APPOINTMENT</a> <!-- Mobile Appointment Link -->
+
+                    <a class="hidden lg:block border-2 self-center p-2 bg-white" href="#homeContact">MAKE AN APPOINTMENT</a> <!-- Desktop Appointment Link -->
+                </div>
+
+            </section>
+
+            <section class="flex flex-col min-h-screen overflow-hidden fixed inset-0 bg-[#2D3033]/90 z-50 -translate-x-full transition-transform duration-500 ease-in-out" id="menuOverlay"><!--Menu Overlay-->
+                
+                <div class="flex flex-col items-center justify-center h-full gap-8 text-white text-2xl">
+                    <a href="index.html" class="font-extralight">HOME</a>
+                    <a href="#" class="font-extralight">HISTORY</a>
+                    <a href="#" class="font-extralight">APPROACH</a>
+                    <a href="#" class="font-extralight">TEAM</a>
+                    <a href="#" class="font-extralight">SERVICES</a>
+                    <a href="#" class="font-extralight">CONTACT</a>
+                    <a href="#" class="font-extralight">LOCATION</a>
+
+                    <button id="closeMenu" class="mt-8 text-sm">Close</button>
+                
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 min-h-screen sm:min-h-[50vh] lg:min-h-[90vh] overflow-hidden gap-6 sm:gap-0"> <!--Home Page 2-->
+                
+                <div class="grid grid-cols-1">                   
+                    
+                    <img class="col-start-1 row-start-1 z-10 w-[95%] sm:w-[90%] sm:place-self-center object-cover" src="assets/stills/sawtooth_dental_care_site_sawtooth_history_photo_01.jpg" alt="Dr O'Keefe and Dr. Rob standing next to each other in the snow.">
+
+                    <div class="col-start-1 row-start-1 self-end justify-self-stretch h-2/5 bg-[#006B5A]"></div>
+
+                </div>
+                
+                <div class="flex flex-col px-8 sm:px-16 gap-6 sm:self-center sm:justify-self-center max-w-[500px]">
+                    <h2 class="font-heading text-5xl font-extralight">A LEGACY CONTINUES</h2>
+                    <h3 class="font-accent text-2xl font-extralight italic text-[#D15700]">A new generation with the same warmth</h3>
+                    <p>Carrying on the spirit of care in Twisp.</p>
+                    <div class="flex flex-row gap-8 self-center sm:self-start">
+                        <a class="border-2 border-teal-700 p-2 bg-white text-[#006B5A]" href="#">OUR HISTORY</a>
+                        <img class="hidden sm:block w-16" src="assets/figma/green_arrow.svg" alt="right arrow">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 min-h-screen sm:min-h-[50vh] lg:h-[90vh] overflow-hidden gap-6 sm:gap-0 "> <!--Home Page 3-->
+
+                <div class="grid sm:hidden grid-cols-1 relative"> <!--Mobile Only -->
+
+                    <img class="col-start-1 row-start-1 justify-self-end w-[90%] sm:w-[100%] sm:h-[100%] object-cover z-10" src="assets/stills/sawtooth_dental_care_site_patient_01_retouched.jpg" alt="A relaxed young dental patient, wearing sunglass, and sitting in the dental chair.">
+
+                    <div class="col-start-1 row-start-1 self-end h-[55%] z-20 bg-gray-700/90 sm:hidden"></div>
+
+                    <div class="col-start-1 row-start-1 self-end mb-[10%] flex flex-col pr-8 pl-8 gap-6 z-20 sm:hidden">
+                        
+                        <h2 class="font-heading text-5xl font-extralight text-white">INNOVATION AND COMFORT</h2>
+                        <h3 class="font-accent text-2xl font-extralight italic text-white">The latest restorative techniques come home to a trusted place</h3>
+                        <p class="text-white">Keeping your smile strong and preserving the natural structure of the tooth.</p>
+                        <a class="border-2 p-2 bg-transparent self-center text-white" href="#">OUR APPROACH</a>
+                    </div>
+                
+                </div>
+
+                <!--Tablet and Desktop-->
+
+                <div class="hidden sm:grid grid-cols-1 order-2">
+
+                    <img class="w-[100%] h-[100%] object-cover z-10" src="assets/stills/sawtooth_dental_care_site_patient_01_retouched.jpg" alt="A relaxed young dental patient, wearing sunglass, and sitting in the dental chair.">
+
+                </div>
+                
+                <div class="hidden sm:grid grid-cols-1 max-h-screen relative order-1"> 
+                
+                    <div class="flex flex-col self-center justify-self-center px-16 gap-6 max-w-[500px]">
+                        
+                        <h2 class="font-heading text-5xl font-extralight text-white">INNOVATION AND COMFORT</h2>
+                        <h3 class="font-accent text-2xl font-extralight italic text-white">The latest restorative techniques come home to a trusted place</h3>
+                        <p class="text-white ">Keeping your smile strong and preserving the natural structure of the tooth.</p>
+                        <div class="flex flex-row gap-8 self-center sm:self-start"> 
+                            <a class="border-2 self-start p-2 bg-transparent text-white" href="#">OUR APPROACH</a>
+                            <img class="hidden sm:block w-16" src="assets/figma/white_arrow.svg" alt="right arrow">
+                        </div>
+
+                    </div>
+
+                    <div class="absolute inset-0 bg-gray-700/90 -z-20">
+                    
+                    </div>
+
+                </div>
+            
+
+            </section>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 min-h-screen sm:min-h-[50vh] lg:min-h-[90vh] overflow-hidden gap-6 sm:gap-0"> <!--Home Page 4-->
+
+                <div class="grid grid-cols-1">
+                    
+                    <img class="col-start-1 row-start-1 justify-self-end self-end mb-[20%] z-10 w-[95%] sm:w-[90%] sm:place-self-center object-cover" src="assets/stills/sawtooth_dental_care_site_team_01_retouched.jpg" alt="The Sawtooth team at a dental care conference.">
+
+                    <div class="col-start-1 row-start-1 self-end sm:self-start justify-self-stretch h-2/5 bg-[#945A00]"></div>
+
+                </div>
+                
+                <div class="flex flex-col px-8 sm:px-16 gap-6 sm:self-center sm:justify-self-center max-w-[500px]">
+                    
+                    <h2 class="font-heading text-5xl font-extralight">TEAM BASED CARE</h2>
+                    <h3 class="font-accent text-2xl font-extralight italic text-[#D15700]">Collaboration and Communication</h3>
+                    <p>A personal touch from every member of our team. We build around your goals, your timeline, and your budget.</p>
+                    <div class="flex flex-row gap-8 self-center sm:self-start">
+                        <a class="border-2 self-center sm:self-start p-2 bg-white text-[#006B5A]" href="#">MEET OUR TEAM</a>
+                        <img class="hidden sm:block w-16" src="assets/figma/green_arrow.svg" alt="right arrow">
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+
+            <section class="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-1 relative min-h-screen sm:min-h-[87vh] lg:h-screen overflow-hidden gap-6 sm:gap-0"> <!--Home Page 5-->
+
+                 <!-- Mobile and Table Only -->
+
+                <div class="grid grid-cols-1 relative lg:hidden">
+                    
+                    <img class="col-start-1 row-start-1 -z-20 w-[96%] sm:w-full object-cover" src="assets/stills/sawtooth_dental_care_site_services_01.JPG" alt="Dr. Rob working on dentures.">
+
+                    <div class="col-start-1 row-start-1 self-end -z-10 w-full h-[60%] sm:h-[40%]  bg-[#006B5A]/90 lg:hidden"></div>
+
+                    <div class="col-start-1 row-start-1 self-end mb-[10%] flex flex-col px-8 sm:px-16 gap-6 z-20 lg:hidden">
+
+                        <h2 class="font-heading text-5xl font-extralight text-white">FULL RANGE OF TREATMENT</h2>
+                        <h3 class="font-accent text-2xl font-extralight italic text-white">Minimally invasive dental care for patients of all ages</h3>
+                        <p class="text-white">From routine checkups to a full smile makeover we offer the highest level of comprehensive care.</p>
+                        <div class="flex flex-row gap-8 self-center sm:self-start">
+                            <a class="border-2 self-center p-2 bg-transparent text-white" href="#">OUR SERVICES</a>
+                            <img class="hidden sm:block w-16" src="assets/figma/white_arrow.svg" alt="right arrow">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Desktop Only-->
+                
+                <div class="hidden lg:flex col-start-1 row-start-1 col-span-7 -z-20">
+                    <img class="h-[100%] object-cover" src="assets/stills/sawtooth_dental_care_site_services_01.JPG" alt="Dr. Rob working on dentures.">
+                </div>
+
+                <div class="hidden lg:flex col-start-6 col-span-7 row-start-1 -z-10 mt-[30%] bg-[#006B5A]/90"></div>
+                    
+                <div class="hidden lg:flex col-start-7 col-span-6 row-start-1 flex-col justify-center px-16 gap-6 z-10 max-w-[500px]">
+                        
+                        <h2 class="font-heading text-5xl font-extralight text-white">FULL RANGE OF TREATMENT</h2>
+                        <h3 class="font-accent text-2xl font-extralight italic text-white">Minimally invasive dental care for patients of all ages</h3>
+                        <p class="text-white">From routine checkups to a full smile makeover we offer the highest level of comprehensive care.</p>
+                        <a class="border-2 self-start p-2 bg-transparent text-white" href="#">OUR SERVICES</a>
+
+                </div>
+            
+
+            </section>
+
+            <section id="homeContact" class="flex flex-col min-h-screen relative overflow-hidden bg-[#E4D4BF] gap-8 lg:gap-4"> <!--Home-Contact-->
+                
+                <div class="flex flex-col pt-[6vh] sm:pt-[12vh] px-8 gap-6 items-center">
+                    
+                    <h2 class="font-heading text-5xl font-extralight text-center">Contact</h2>
+
+                    <p class="text-center">PLEASE CALL US AT <b>509-997-7533</b> OR USE THE FORM BELOW.</p>
+                    
+                    <a class="border-2 self-center p-2 bg-white" href="#">MAKE AN APPOINTMENT</a>
+                    
+                </div>
+
+
+
+                <form class="flex flex-col bg-white border-2 p-6 lg:mb-[8vh] mx-auto w-80 sm:w-96 lg:w-[32rem]">
+
+                      <label class="mb-2 block" for="patientName">NAME</label>
+                      <input class="border w-full mb-4 p-2" type="text" id="patientName" name="patientName">
+
+                      <label class="mb-2 block" for="phone">PHONE</label>
+                      <input class="border w-full mb-4 p-2" type="text" id="phone" name="phone">
+           
+                      <label class="mb-2 block" for="email">EMAIL</label>
+                      <input class="border w-full mb-4 p-2" type="text" id="email" name="email">
+
+                      <label class="mb-2 block" for="preference">DATE / TIME PREFERENCE</label>
+                      <textarea class="border w-full mb-4 p-2" id="preference" name="preference" rows="4"></textarea>
+
+                      <button id="sendMessage" type="submit" class="self-center rounded-lg bg-[#2C2C2C] py-2 px-6 text-white">SEND MESSAGE</button>
+                </form>
+                
+
+
+            </section>
+    
+            <section class="flex flex-col min-h-screen relative overflow-hidden gap-10"> <!--Home-Location-->
+                
+                <div class="flex flex-col pt-[6vh] pr-8 pl-8 gap-6 items-center">
+                    
+                    <h2 class="font-heading text-5xl font-extralight text-center">Location</h2>
+
+                    <p class="text-center">115 S GLOVER ST<br>TWISP, WA 98856.</p>
+
+                    <p class="text-center">MONDAY 8AM-4PM<br>TUESDAY 9AM-5PM<br>WEDNESDAY 9AM-2PM<br>THURSDAY 8AM-4PM<br>FRIDAY 9AM-4PM</p>
+                    
+                </div>
+
+                <div class="px-8 sm:px-16">
+                    <iframe class="w-full h-[35vh] sm:h-[50vh] lg:h-[40vh] rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.79268583305!2d-120.12420072229595!3d48.36450717126939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549ca3f9399f869b%3A0x53e212eed493d66e!2sSawtooth%20Dental%20Care!5e0!3m2!1sen!2sus!4v1748554099587!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="flex flex-col mt-8 pr-8 pl-8 items-center">
+
+                    <h4 class="text-xl text-center text-[#D15700]">PROUDLY SERVING THE METHOW VALLEY FOR OVER 20 YEARS</h4>
+
+                </div>
+
+                
+
+
+            </section>
+
+            <footer class="flex flex-col items-center gap-4 pt-8 pb-8 sm:bg-[#2D3033] lg:grid lg:grid-cols-3 lg:grid-rows-[auto_auto] lg:gap-y-6"> <!-- Site Footer -->
+                          
+                    <div class="sm:hidden"> <!-- Black Logo Section -->    
+                        <a href="index.html">
+                            <img src="assets/figma/sawtooth_logo_custom 1.svg" alt="Sawtooth Dental Care Logo">
+                        </a>
+                    </div>
+
+                    <div class="hidden sm:block lg:row-start-1 lg:col-span-3 lg:justify-self-center"> <!-- White Logo Section -->    
+                        <a href="index.html">
+                            <img class="lg:w-48" src="assets/figma/sawtooth_logo_custom 2.svg" alt="Sawtooth Dental Care Logo">
+                        </a>
+                    </div>
+                    
+                    <div class="text-center sm:text-white lg:row-start-2 lg:col-start-2 lg:justify-self-center lg:self-end"> <!-- Address Section -->
+                        <address class="not-italic">
+                            <a href="https://www.google.com/maps/search/Sawtooth+Dental+Care+Twisp+WA/">
+                                115 S GLOVER ST<br>
+                                TWISP, WA 98856
+                            </a>
+                        </address>
+                    </div>
+                    
+
+                    <div class="flex flex-col items-center lg:items-start sm:text-white lg:row-start-2 lg:col-start-1 lg:justify-self-center lg:self-end"> <!-- Social Media Section -->
+                        
+                        <div class="flex gap-2">
+                            <a href="https://www.google.com/maps/search/Sawtooth+Dental+Care+Twisp+WA/">GOOGLE</a>
+                            <img class="sm:hidden w-6" src="assets/figma/Arrow.svg" alt="right arrow">
+                            <img class="hidden sm:block w-6" src="assets/figma/white_arrow.svg" alt="right arrow">
+
+                        </div>
+
+                        <div class="flex gap-2">
+                            <a href="https://www.facebook.com/SawtoothDentalCare/">FACEBOOK</a>
+                            <img class="sm:hidden w-6" src="assets/figma/Arrow.svg" alt="right arrow">
+                            <img class="hidden sm:block w-6" src="assets/figma/white_arrow.svg" alt="right arrow">
+                        </div>
+
+                        <div class="flex gap-2">
+                            <a href="https://www.instagram.com/sawtooth_dental/">INSTAGRAM</a>
+                            <img class="sm:hidden w-6" src="assets/figma/Arrow.svg" alt="right arrow">
+                            <img class="hidden sm:block w-6" src="assets/figma/white_arrow.svg" alt="right arrow">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col text-center lg:text-left sm:text-white lg:row-start-2 lg:col-start-3 lg:justify-self-center lg:self-end"> <!-- Contact Section-->
+                        <a href="tel:+15099977533">509-997-7533</a>
+                        <a href="mailto:sawtoothdental@methownet.com">SAWTOOTHDENTAL@METHOWNET.COM</a>
+                    </div>
+
+            </footer>
+
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
